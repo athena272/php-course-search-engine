@@ -1,0 +1,20 @@
+{
+    "name": "athena272/php-course-search-engine",
+    "description": "Project that fetches courses from the Alura website",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Athena272\\PhpCourseSearchEngine\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "athena272",
+            "email": "guilhermera272@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "symfony/dom-crawler": "^7.2"
+    }
+}
