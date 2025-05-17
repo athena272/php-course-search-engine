@@ -3,6 +3,7 @@
 namespace Athena272\CourseSearchEngine\Tests;
 
 use Athena272\CourseSearchEngine\Models\CourseFetcher;
+use GuzzleHttp\Exception\GuzzleException;
 use PHPUnit\Framework\MockObject\Exception;
 use PHPUnit\Framework\TestCase;
 use GuzzleHttp\ClientInterface;
@@ -21,7 +22,7 @@ class FinderTest extends TestCase
     protected function setUp(): void
     {
         $html = <<<HTML
-        <html>
+        <html lang="eng">
             <body>
                 <span class="card-curso__nome">Test Course 1</span>
                 <span class="card-curso__nome">Test Course 2</span>
@@ -52,6 +53,9 @@ class FinderTest extends TestCase
         $this->httpClientMock = $httpClient;
     }
 
+    /**
+     * @throws GuzzleException
+     */
     public function testFinderShouldReturnCourses()
     {
         $crawler = new Crawler();
