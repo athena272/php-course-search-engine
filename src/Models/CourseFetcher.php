@@ -1,6 +1,6 @@
 <?php
 
-namespace CourseSearchEngine\Models;
+namespace Athena272\CourseSearchEngine\Models;
 
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
