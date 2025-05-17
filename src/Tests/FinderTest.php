@@ -13,7 +13,7 @@ use Symfony\Component\DomCrawler\Crawler;
 class FinderTest extends TestCase
 {
     private $httpClientMock;
-    private $url = 'test-url';
+    private string $url = 'test-url';
 
     /**
      * @throws Exception
