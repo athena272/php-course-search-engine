@@ -3,8 +3,11 @@
     "description": "Project that fetches courses from the Alura website",
     "type": "library",
     "autoload": {
+        "files": [
+            "./src/Functions/showMessage.php"
+        ],
         "psr-4": {
-            "Athena272\\PhpCourseSearchEngine\\": "src/"
+            "Athena272\\CourseSearchEngine\\": "src/"
         }
     },
     "authors": [
