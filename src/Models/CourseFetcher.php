@@ -3,6 +3,7 @@
 namespace Athena272\CourseSearchEngine\Models;
 
 use GuzzleHttp\ClientInterface;
+use GuzzleHttp\Exception\GuzzleException;
 use Symfony\Component\DomCrawler\Crawler;
 
 class CourseFetcher
@@ -15,7 +16,7 @@ class CourseFetcher
     /**
      * @var Crawler
      */
-    private $crawler;
+    private Crawler $crawler;
 
     public function __construct(ClientInterface $httpClient, Crawler $crawler)
     {
@@ -23,6 +24,9 @@ class CourseFetcher
         $this->crawler = $crawler;
     }
 
+    /**
+     * @throws GuzzleException
+     */
     public function getCourses(string $url): array
     {
         $response = $this->httpClient->request('GET', $url);
