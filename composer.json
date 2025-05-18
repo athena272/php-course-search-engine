@@ -25,5 +25,9 @@
         "phpunit/phpunit": "^12.1",
         "squizlabs/php_codesniffer": "^3.13",
         "phan/phan": "^5.4"
+    },
+    "scripts": {
+        "test": "phpunit src\\Tests\\FinderTest.php",
+        "cs": "phpcs --standard=PSR12 src/Models/"
     }
 }
