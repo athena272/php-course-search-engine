@@ -29,5 +29,6 @@
     "scripts": {
         "test": "phpunit src\\Tests\\FinderTest.php",
         "cs": "phpcs --standard=PSR12 src/Models/"
-    }
+    },
+    "license": "MIT"
 }
