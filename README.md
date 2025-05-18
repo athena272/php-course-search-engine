@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://img.shields.io/packagist/v/athena272/php-course-search-engine.svg)](https://packagist.org/packages/athena272/php-course-search-engine)
 [![License](https://img.shields.io/packagist/l/athena272/php-course-search-engine.svg)](LICENSE)
 
-Projeto que busca cursos do site da Alura de forma automática, usando PHP.
+Biblioteca PHP para buscar cursos automaticamente no site da Alura, usando scraping com Guzzle e Symfony DomCrawler.
 
 ## Instalação
 
